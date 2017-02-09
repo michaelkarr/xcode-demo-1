@@ -8,6 +8,11 @@
 
 import UIKit
 
+//MVC:
+//Models: what holds your data
+//Views: everything you see and interact with
+//Controllers: code, intermediate between model and view
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
