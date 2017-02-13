@@ -16,23 +16,30 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    let factProvider = FactProvider()
+    let colorProvider = BackgroundColorProvider()
     
+    @IBOutlet weak var showFunFactButton: UIButton!
     @IBOutlet weak var funFactLabel: UILabel!
-    
+
     @IBAction func showFunFact(sender: AnyObject) {
         
-        print("Hi Michael")
+        //print(factProvider.randomFact())
+        funFactLabel.text = factProvider.randomFact()
+        
+        let randomColor = colorProvider.randomColor()
+        view.backgroundColor = randomColor
+        showFunFactButton.tintColor = randomColor
         
     }
-    
-    let factProvider = FactProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        funFactLabel.text = "Hi Michael"
-        print(factProvider.facts);
+        funFactLabel.numberOfLines = 0
+        funFactLabel.text = "Press for a fun fact!"
+        //print(factProvider.facts);
         
     }
 

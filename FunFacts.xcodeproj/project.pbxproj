@@ -13,6 +13,7 @@
 		E20DB9C01E4C44AA00F86922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20DB9BF1E4C44AA00F86922 /* Assets.xcassets */; };
 		E20DB9C31E4C44AA00F86922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20DB9C11E4C44AA00F86922 /* LaunchScreen.storyboard */; };
 		E2324D031E51374B00D0F37E /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2324D021E51374B00D0F37E /* FactProvider.swift */; };
+		E2324D051E513CC300D0F37E /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2324D041E513CC300D0F37E /* BackgroundColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E20DB9C21E4C44AA00F86922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20DB9C41E4C44AA00F86922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2324D021E51374B00D0F37E /* FactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
+		E2324D041E513CC300D0F37E /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E20DB9B81E4C44AA00F86922 /* AppDelegate.swift */,
 				E20DB9BA1E4C44AA00F86922 /* ViewController.swift */,
+				E2324D041E513CC300D0F37E /* BackgroundColorProvider.swift */,
 				E2324D021E51374B00D0F37E /* FactProvider.swift */,
 				E20DB9BC1E4C44AA00F86922 /* Main.storyboard */,
 				E20DB9BF1E4C44AA00F86922 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				E20DB9BB1E4C44AA00F86922 /* ViewController.swift in Sources */,
 				E20DB9B91E4C44AA00F86922 /* AppDelegate.swift in Sources */,
+				E2324D051E513CC300D0F37E /* BackgroundColorProvider.swift in Sources */,
 				E2324D031E51374B00D0F37E /* FactProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

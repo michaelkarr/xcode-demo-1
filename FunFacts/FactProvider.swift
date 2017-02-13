@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GameKit
 
 struct FactProvider {
     
@@ -23,5 +24,10 @@ struct FactProvider {
         "On average, it takes 66 days to form a new habit.",
         "Mammoths still walked the Earth when the Great Pyramid was being built."
     ]
+    
+    func randomFact() -> String {
+        let random = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+        return facts[random]
+    }
     
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,31 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Fun Fact Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B82-ZT-zMk">
-                                <rect key="frame" x="20" y="323" width="164" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSD-GG-FPz">
+                                <rect key="frame" x="20" y="139" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSD-GG-FPz">
-                                <rect key="frame" x="20" y="55" width="112" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-KB-2Mm">
+                                <rect key="frame" x="36" y="574" width="303" height="33"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-KB-2Mm">
-                                <rect key="frame" x="136" y="471" width="101" height="30"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Fun Fact"/>
                                 <connections>
                                     <action selector="showFunFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fO-Kr-sv4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Fun Fact Here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B82-ZT-zMk">
+                                <rect key="frame" x="20" y="319" width="335" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="NJI-DA-dW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kpj-KB-2Mm" secondAttribute="trailing" constant="20" id="2bt-sF-oyO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kpj-KB-2Mm" secondAttribute="bottom" constant="60" id="Dmf-1O-vWW"/>
+                            <constraint firstItem="B82-ZT-zMk" firstAttribute="leading" secondItem="XSD-GG-FPz" secondAttribute="leading" id="ERH-yX-M6B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XSD-GG-FPz" secondAttribute="trailing" constant="160" id="GqK-7l-loW"/>
+                            <constraint firstItem="kpj-KB-2Mm" firstAttribute="top" secondItem="B82-ZT-zMk" secondAttribute="bottom" constant="150" id="Oe4-JA-3KM"/>
+                            <constraint firstItem="B82-ZT-zMk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="VOK-E1-YWR"/>
+                            <constraint firstItem="B82-ZT-zMk" firstAttribute="top" secondItem="XSD-GG-FPz" secondAttribute="bottom" constant="150" id="WZu-FT-Lds"/>
+                            <constraint firstItem="B82-ZT-zMk" firstAttribute="centerX" secondItem="kpj-KB-2Mm" secondAttribute="centerX" id="gdp-g4-6eA"/>
+                            <constraint firstItem="kpj-KB-2Mm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="rHa-hd-c3p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kpj-KB-2Mm" secondAttribute="bottom" constant="60" id="tOz-lO-9EX"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="FunFactLabel" destination="B82-ZT-zMk" id="Ghv-Is-G2m"/>
+                        <outlet property="showFunFactButton" destination="kpj-KB-2Mm" id="fRf-FB-Rcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
