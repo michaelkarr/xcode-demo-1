@@ -25,11 +25,14 @@ class ViewController: UIViewController {
         
     }
     
+    let factProvider = FactProvider()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         funFactLabel.text = "Hi Michael"
+        print(factProvider.facts);
         
     }
 
