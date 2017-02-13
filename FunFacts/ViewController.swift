@@ -15,9 +15,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
+    @IBOutlet weak var funFactLabel: UILabel!
+    
+    @IBAction func showFunFact(sender: AnyObject) {
+        
+        print("Hi Michael")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        funFactLabel.text = "Hi Michael"
+        
     }
 
     override func didReceiveMemoryWarning() {
