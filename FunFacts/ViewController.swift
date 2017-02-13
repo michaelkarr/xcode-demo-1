@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         let randomColor = colorProvider.randomColor()
         view.backgroundColor = randomColor
-        showFunFactButton.tintColor = randomColor
+        showFunFactButton.tintColor = randomColor //sync button color with background
         
     }
     
